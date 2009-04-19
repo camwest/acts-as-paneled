@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>index</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Cameron Westland">
+	<!-- Date: 2009-04-19 -->
+
+	  <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>	
+		<script type="text/javascript" charset="utf-8" src="acts_as_panelled.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('.acts_as_panel').actsAsPanelled({
+
+					// linksContainer: $('#my_links'),
+					
+					finishFunction: function(htmlElement){
+						document.forms[0].submit();
+					}
+
+				});
+			});
+		</script>
+		
+		<style type="text/css" media="screen">
+			.form_links .selected {
+				font-weight:bold;
+			}
+		</style>
+</head>
+<body>
+	
+	<div class="acts_as_panel">
+		
+		<form action="index_submit" method="get" accept-charset="utf-8">
+		
+			<div class="form_panel" title="Personal Information">
+				<p>
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" />
+				</p>
+			
+				<p>
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" />
+				</p>
+			</div>
+		
+			<div class="form_panel" title="Label 2">
+				<p>Panel 2</p>
+			</div>
+		
+			<div class="form_panel" title="Label 3">
+				<p>Panel 3</p>
+			</div>
+						
+		</form>
+		
+	</div>
+
+	
+	<!-- <div id="my_links"></div> -->
+	
+	
+</body>
+</html>
