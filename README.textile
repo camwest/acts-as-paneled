@@ -1,4 +1,4 @@
-h2. Acts As Panelled jQuery Plugin
+	h2. Acts As Panelled jQuery Plugin
 
 Seperates sections of a form into parts that and creates next and forward buttons.
 
@@ -6,18 +6,21 @@ h3. Usage
 
 h4. Javascript:
 
-@$('.acts_as_panel').actsAsPanelled({
+@
+$('.acts_as_panel').actsAsPanelled({
 	// linksContainer: $('#my_links'),
 	
 	finishFunction: function(htmlElement){
 		document.forms[0].submit();
 	}
 
-});@
+});
+@
 
 h4. HTML
 
-@<form class="acts_as_panel" action="index_submit" method="post">
+@
+<form class="acts_as_panel" action="index_submit" method="post">
 	
 	<div class="form_panel" title="Personal Information">
 		<p>
@@ -39,7 +42,8 @@ h4. HTML
 		<p>Panel 3</p>
 	</div>
 					
-</form>@
+</form>
+@
 
 
 
