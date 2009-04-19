@@ -7,19 +7,19 @@ h3. Usage
 h4. Javascript:
 
 <pre>
-	$('.acts_as_panel').actsAsPanelled({
+$('.acts_as_panel').actsAsPanelled({
 	// linksContainer: $('#my_links'),
 	
 	finishFunction: function(htmlElement){
 		document.forms[0].submit();
 	}
-
 });
 </pre>
 
 h4. HTML
 
-@
+<pre>
+	
 <form class="acts_as_panel" action="index_submit" method="post">
 	
 	<div class="form_panel" title="Personal Information">
@@ -43,8 +43,7 @@ h4. HTML
 	</div>
 					
 </form>
-@
-
+</pre>
 
 
 h3. LICENSE:
