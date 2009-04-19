@@ -6,8 +6,8 @@ h3. Usage
 
 h4. Javascript:
 
-@
-$('.acts_as_panel').actsAsPanelled({
+<pre>
+	$('.acts_as_panel').actsAsPanelled({
 	// linksContainer: $('#my_links'),
 	
 	finishFunction: function(htmlElement){
@@ -15,7 +15,7 @@ $('.acts_as_panel').actsAsPanelled({
 	}
 
 });
-@
+</pre>
 
 h4. HTML
 
